@@ -1,5 +1,5 @@
 
-# Dockerized pipeline 1
+# Dockerized pipeline project
 
 ## Project Overview
 
@@ -16,7 +16,7 @@ The pipeline is designed in two phases, phase I The extraction and transformatio
 - Gitbash
 - Vscode
 
-## Getting Started phase I
+# Getting Started phase I
 
 ● For this phase I, use Jupyter Notebook
 ● Install pandas
@@ -32,19 +32,22 @@ To get started, you will need to have Docker installed. Once you have Docker ins
 ● Copying all your codes from the notebook (phase I) and paste them in the pipeline.py file
 
 ● The Dockerfile should contain the following instructions:
+
 ○ Download the base image python
+
 ○ The WORKDIR as /app
+
 ○ Run the necessary installations based on your imports from your notebook
+
 ○ Apply a default command using CMD[“python”,”pipeline.py”] This will (Automate) the pipeline.py output  
 
 
-**Note:**
+# **Note**
 Build the image with {your_name}:pipeline, example: docker build -t collins:pipeline .
-Don’t forget to indicate your current path (.)
-Run the pipeline.
-In the phase II, When the Docker image is being run, it should output all the answers in the following format:
 
-# Answers
+Don’t forget to indicate your current path (.)
+
+When the Docker image is being run, it should output all the answers in the following format:
 
 My name is {Your name}, and here are my answers:
 
